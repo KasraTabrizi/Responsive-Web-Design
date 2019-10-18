@@ -1,7 +1,53 @@
-div{
+.container{
     font-size: 2rem;
+    display: flex;
 }
 
+.container div{
+    border: 2px solid black;
+    text-align: center;
+}
+
+@media screen and (max-width: 300px) {
+    body{
+        background-color: red;
+    }
+    .container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    body{
+        background-color: green;
+    }
+    #small{
+        width: 30%;
+    }
+    #medium{
+        width: 60%;
+    }
+    #large{
+        width: 100%;
+    }
+
+  }
+
+@media screen and (min-width: 768px) {
+    body{
+        background-color: blue;
+    }
+    .container{
+        flex-direction: row;
+    }
+    .container div{
+        flex-grow: 1;
+    }
+}
+
+
+/*EXCERSIZE 1 & 2 */
+/*
 @media screen and (max-width: 300px) {
     body{
         background-color: red;
@@ -27,4 +73,5 @@ div{
     #small, #medium{
         display: none;
     }
-  }
+}
+*/
