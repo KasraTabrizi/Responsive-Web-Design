@@ -1,0 +1,133 @@
+/*EXCERSIZE 3 WITH GRID*/
+.container {
+  font-size: 2rem;
+  display: grid;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.container div {
+  border: 2px solid black;
+  text-align: center;
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    background-color: red;
+  }
+
+  .container {
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  body {
+    background-color: green;
+  }
+
+  .container {
+    grid-template-areas: "small medium medium" "large large large";
+  }
+  .container #small {
+    grid-area: small;
+  }
+  .container #medium {
+    grid-area: medium;
+  }
+  .container #large {
+    grid-area: large;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*EXCERSIZE 3 WITH FLEX*/
+/*
+.container{
+    font-size: 2rem;
+    display: flex;
+    div{
+        border: 2px solid black;
+        text-align: center;
+        margin: 2.5px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    body{
+        background-color: red;
+    }
+    .container{
+        flex-direction: column;
+        div{
+            flex-grow: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    body{
+        background-color: green;
+    }
+    .container{
+        flex-wrap: wrap;
+        #small{
+            flex-grow: 1;
+        }
+        #medium{
+            flex-grow: 2;
+        }
+        #large{
+            width: 100%;
+        }
+    }
+  }
+
+@media screen and (min-width: 768px) {
+    body{
+        background-color: blue;
+    }
+    .container{
+        flex-direction: row;
+
+        div{
+            flex-grow: 1;
+        }
+    }
+}
+*/
+/*
+@media screen and (max-width: 300px) {
+    body{
+        background-color: red;
+    }
+    #medium, #large{
+        display: none;
+    }
+  }
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    body{
+        background-color: green;
+    }
+    #small, #large{
+        display: none;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+    body{
+        background-color: blue;
+    }
+    #small, #medium{
+        display: none;
+    }
+}
+*/
+
+/*# sourceMappingURL=style_new.css.map */
