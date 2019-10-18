@@ -26,7 +26,17 @@
         background-color: green;
     }
     .container{
-        grid-template-columns: 1fr 2fr 3fr;
+        grid-template-areas: "small medium medium"
+                             "large large large";
+    }
+    #small{
+        grid-area: small;
+    }
+    #medium{
+        grid-area: medium;
+    }
+    #large{
+        grid-area: large;
     }
 }
 
