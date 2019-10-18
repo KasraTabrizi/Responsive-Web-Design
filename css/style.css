@@ -1,8 +1,49 @@
+/*EXCERSIZE 3 WITH GRID*/
+.container{
+    font-size: 2rem;
+    display: grid;
+}
+
+.container div{
+    border: 2px solid black;
+    text-align: center;
+}
+
+@media screen and (max-width: 300px) {
+    body{
+        background-color: red;
+    }
+    .container{
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    body{
+        background-color: green;
+    }
+    .container{
+        grid-template-columns: 1fr 2fr 3fr;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        background-color: blue;
+    }
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+/*EXCERSIZE 3 WITH FLEX*/
+/*
 .container{
     font-size: 2rem;
     display: flex;
 }
-
 
 .container div{
     border: 2px solid black;
@@ -48,7 +89,7 @@
         flex-grow: 1;
     }
 }
-
+*/
 
 /*EXCERSIZE 1 & 2 */
 /*
