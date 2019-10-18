@@ -1,5 +1,5 @@
 /*EXCERSIZE 3 WITH GRID*/
-/*
+
 .container{
     font-size: 2rem;
     display: grid;
@@ -38,11 +38,11 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
-*/
+
 
 
 /*EXCERSIZE 3 WITH FLEX*/
-
+/*
 .container{
     font-size: 2rem;
     display: flex;
@@ -94,7 +94,7 @@
     }
 }
 
-
+*/
 /*EXCERSIZE 1 & 2 */
 /*
 @media screen and (max-width: 300px) {
